@@ -1,0 +1,27 @@
+{
+  "name": "codex-advisor",
+  "version": "0.3.0",
+  "description": "Model-agnostic Codex orchestration with dynamic, cost-aware task routing.",
+  "author": {
+    "name": "jmrichardson",
+    "url": "https://github.com/jmrichardson"
+  },
+  "homepage": "https://github.com/jmrichardson/codex-advisor#readme",
+  "repository": "https://github.com/jmrichardson/codex-advisor",
+  "license": "MIT",
+  "keywords": ["codex", "orchestration", "multi-agent", "model-routing"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Advisor",
+    "shortDescription": "Route, verify, and review Codex work dynamically.",
+    "longDescription": "Codex Advisor keeps the active parent model in charge while dynamically assigning bounded work to supported native Codex subagents. It favors Luna for narrow mechanical work, Terra for exploration and bounded implementation, and Sol for architecture, high-risk work, and fresh review, while treating live tool metadata as authoritative.",
+    "developerName": "jmrichardson",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://github.com/jmrichardson/codex-advisor",
+    "defaultPrompt": [
+      "Use $codex-advisor:orchestration to plan, route, implement, verify, and review this work.",
+      "Delegate only bounded work when another context materially improves delivery."
+    ]
+  }
+}

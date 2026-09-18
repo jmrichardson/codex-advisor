@@ -1,0 +1,7 @@
+interface:
+  display_name: "Codex Advisor Orchestration"
+  short_description: "Route and review Codex work dynamically"
+  default_prompt: "Use $codex-advisor:orchestration to plan, route, implement, verify, and review this work."
+
+policy:
+  allow_implicit_invocation: true

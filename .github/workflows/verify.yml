@@ -10,5 +10,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - name: Verify Astra Advisor package
-        run: sh plugins/astra-advisor/scripts/verify.sh
+      - name: Install verifier dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Verify Codex Advisor package
+        run: python plugins/codex-advisor/scripts/verify.py
+      - name: Test verifier failure cases
+        run: python -m unittest discover -s plugins/codex-advisor/tests -p "test_*.py"
